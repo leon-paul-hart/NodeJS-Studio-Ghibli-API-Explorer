@@ -1,0 +1,36 @@
+body {
+  background-image: url("studio_ghibli.jpg");
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  transition: background 1s linear;
+  min-height: 480px;
+  min-width: 480px;
+}
+
+select {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
+  font-kerning: auto;
+  font-size: 1em;
+  text-align: center;
+  font-family: sans-serif;
+  background-color: #2684C4;
+  padding: 5px;
+}
+
+p {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  color: white;
+  font-kerning: auto;
+  font-size: 2em;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 15px;
+}
