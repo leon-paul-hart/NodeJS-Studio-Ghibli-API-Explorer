@@ -1,5 +1,5 @@
 body {
-  background-image: url("studio_ghibli.jpg");
+  background-image: url("../img/studio_ghibli.jpg");
   display: flex;
   flex-direction: column;
   background-size: cover;

@@ -1,16 +1,18 @@
-var express = require('express');
-var app = express();
-var path = require('path');
-var port = process.env.PORT || 1337;
+const express = require('express');
+const path = require('path');
+const http = require('http');
+const port = process.env.PORT || 1337;
 
-app.get('/', function (req, res) {
-    res.sendFile(path.join(__dirname + '/index.html'));
+const app = express();
+
+// Route to homepage
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
+// Set static content folder
 app.use(express.static('public'));
 
-var http = require('http');
+// Set up HTTP server
+http.createServer(app).listen(port, () => console.log(`Express server now running at http://localhost:${port}`));
 
-http.createServer(app).listen(port);
-
-console.log('Server now running at http://localhost:' + port);
