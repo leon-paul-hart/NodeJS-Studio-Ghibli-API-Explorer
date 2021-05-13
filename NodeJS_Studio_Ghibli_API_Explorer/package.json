@@ -1,6 +1,6 @@
 {
   "name": "node-js_studio_ghibli_api_explorer",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "NodeJS_Studio_Ghibli_API_Explorer",
   "main": "server.js",
   "scripts": {
