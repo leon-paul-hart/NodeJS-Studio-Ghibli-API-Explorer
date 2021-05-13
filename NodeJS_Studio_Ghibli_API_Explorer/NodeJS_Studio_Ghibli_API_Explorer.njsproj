@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Content Include="public\index.html" />
+    <Content Include="routes\index.js" />
     <Content Include="server.js" />
     <Content Include="package.json" />
     <Content Include="README.md" />
@@ -44,6 +45,7 @@
     <Content Include="public\img\studio_ghibli.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="routes\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\img\" />
