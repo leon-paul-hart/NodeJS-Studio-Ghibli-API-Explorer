@@ -13,7 +13,5 @@ app.get('/', (req, res) => {
 // Set static content folder
 app.use(express.static('public'));
 
-
 // Set up HTTP server
 http.createServer(app).listen(port, () => console.log(`Express server now running at http://localhost:${port}`));
-
