@@ -17,6 +17,16 @@ httpServer.listen(httpPort);
 //var httpsServer = https.createServer(credentials, app);
 //httpsServer.listen(httpsPort);
 
+// set up rate limiter: maximum of five requests per minute
+//const RateLimit = require('express-rate-limit');
+//const limiter = new RateLimit({
+//    windowMs: 1 * 60 * 1000, // 1 minute
+//    max: 15
+//});
+
+// apply rate limiter to all requests
+//app.use(limiter);
+
 // Set static content folder
 app.use(express.static('public'));
 
