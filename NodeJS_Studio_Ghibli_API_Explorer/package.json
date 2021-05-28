@@ -11,7 +11,9 @@
     "name": ""
   },
   "dependencies": {
+    "compression": "^1.7.4",
     "express": "^4.17.1",
+    "express-minify": "^1.0.0",
     "express-rate-limit": "^5.2.6"
   },
   "devDependencies": {

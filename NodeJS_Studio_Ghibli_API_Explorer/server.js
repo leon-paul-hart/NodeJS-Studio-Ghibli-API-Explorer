@@ -1,8 +1,10 @@
 const express = require('express');
+const minify = require('express-minify');
+const compression = require('compression')
+const http = require('http');
 const app = express();
 
 // HTTP server setup
-const http = require('http');
 const httpPort = process.env.PORT || 8080;
 const httpServer = http.createServer(app)
 httpServer.listen(httpPort);
@@ -26,6 +28,12 @@ httpServer.listen(httpPort);
 
 // apply rate limiter to all requests
 //app.use(limiter);
+
+// Compress the static resources
+app.use(compression())
+
+// Use express-minify to shrink static resource files
+app.use(minify());
 
 // Set static content folder
 app.use(express.static('public'));
