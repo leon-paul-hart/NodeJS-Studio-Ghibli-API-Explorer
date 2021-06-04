@@ -42,6 +42,8 @@ app.use(express.static('public'));
 // Routes
 app.use('/', require('./routes/index'));
 
-// Console notifications
+// HTTP Server Start Notification
 console.log(`HTTP server listening at http://localhost:${httpPort}`);
+
+// HTTPS Server Start Notification
 //console.log(`HTTPS server listening at http://localhost:${httpsPort}`);
