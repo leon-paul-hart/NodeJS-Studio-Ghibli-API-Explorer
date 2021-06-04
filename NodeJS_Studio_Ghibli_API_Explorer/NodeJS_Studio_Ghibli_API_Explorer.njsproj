@@ -5,11 +5,9 @@
     <Name>NodeJS_Studio_Ghibli_API_Explorer</Name>
     <RootNamespace>NodeJS_Studio_Ghibli_API_Explorer</RootNamespace>
     <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
-    <NodeExePath>
-    </NodeExePath>
+    <NodeExePath>C:\Program Files\nodejs\node.exe</NodeExePath>
     <NodeExeArguments>.\node_modules\nodemon\bin\nodemon.js</NodeExeArguments>
-    <DebuggerPort>
-    </DebuggerPort>
+    <DebuggerPort>8181</DebuggerPort>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -38,7 +36,6 @@
     <Content Include="routes\index.js" />
     <Content Include="server.js" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <Content Include="public\js\app.js" />
     <Content Include="public\js\film_list.js" />
     <Content Include="public\js\film_list_view.js" />
