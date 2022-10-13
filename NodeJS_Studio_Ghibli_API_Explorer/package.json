@@ -1,15 +1,4 @@
 {
-  "name": "node-js_studio_ghibli_api_explorer",
-  "version": "1.0.0",
-  "description": "NodeJS_Studio_Ghibli_API_Explorer",
-  "main": "server.js",
-  "type": "commonjs",
-  "scripts": {
-    "start": "node server",
-    "dev": "nodemon server",
-    "eslint": "eslint .",
-    "eslint-fix": "eslint . --fix"
-  },
   "author": {
     "name": ""
   },
@@ -19,16 +8,26 @@
     "express-minify": "^1.0.0",
     "express-rate-limit": "^6.6.0"
   },
+  "description": "NodeJS_Studio_Ghibli_API_Explorer",
   "devDependencies": {
-    "coffee-script": "^1.12.7",
     "eslint": "^8.25.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-n": "^15.3.0",
     "eslint-plugin-promise": "^6.1.0",
-    "less": "^4.1.3",
-    "node-sass": "^7.0.3",
+    "sass": "^1.55.0",
     "nodemon": "^2.0.20",
     "stylus": "^0.59.0"
-  }
+  },
+  "main": "server.js",
+  "name": "node-js_studio_ghibli_api_explorer",
+  "scripts": {
+    "cleanInstall": "npm ci",
+    "dev": "nodemon server",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
+    "start": "node server"
+  },
+  "type": "commonjs",
+  "version": "1.0.0"
 }
